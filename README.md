@@ -1,1 +1,0 @@
-# priut_project
