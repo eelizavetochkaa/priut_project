@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Добро пожаловать в приют "Теремок"!</title>
+  <link rel="stylesheet" href="priutStyle.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="images/logo.svg" alt="зоозабота">
+    </div>
+    <nav class="header__nav">
+      <a href="animals.html" class="header__link">Наши животные</a>
+      <a href="help.html" class="header__link">Как нам помочь?</a>
+      <a href="contacts.html" class="header__link">Контакты</a>
+      <a href="aboutus.html" class="header__link">О нашем приюте</a>
+    </nav>
+    <button class="header__button">Связаться с нами</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">Добро пожаловать в приют "Теремок"!</h1>
+      <p class="hero__text">Республика Татарстан, Высокогорский район</p>
+    </div>
+    <img src="images/собака3.jpg" alt="Моя фотография" class="hero__image">
+    <button class="hero__button">Узнать больше</button>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <h2 class="contacts__title">Связаться с нами</h2>
+    <form class="contacts__form" id="contactForm"> <input type="text" placeholder="Ваше имя" class="contacts__input" id="contactName"> <input type="email" placeholder="Ваш email" class="contacts__input" id="contactEmail"> <textarea placeholder="Ваше сообщение" class="contacts__textarea" id="contactMessage"></textarea> <input type="file" id="contactFile" class="contacts__file-input" accept=".pdf,.doc,.docx,.jpg,.png">
+      <button type="submit" class="contacts__button">Отправить</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2025 Приют животных</p>
+    <div class="footer__social">
+      <a href="https://t.me/teremokzabota" class="footer__link" target="_blank">
+        <img src="images/tg.png" alt="Telegram">
+      </a>
+      <a href="https://vk.com/teremok.zabota" class="footer__link" target="_blank">
+        <img src="images/vk.png" alt="ВКонтакте">
+      </a>
+    </div>
+  </footer>
+
+  <div id="moreInfoModal" class="modal">
+    <div class="modal-content">
+      <span class="close-button">&times;</span>
+      <div class="tabs">
+        <button class="tab-button active" data-tab="animals">Наши животные</button>
+        <button class="tab-button" data-tab="help">Как помочь?</button>
+        <button class="tab-button" data-tab="contacts">Контакты</button>
+        <button class="tab-button" data-tab="aboutus">О нас</button>
+      </div>
+      <div id="animals-content" class="tab-content active">
+        <h3>Наши животные</h3>
+        <p>Здесь будет информация о наших животных.</p>
+        <a href="animals.html" class="modal-link">Посмотреть всех</a>
+      </div>
+      <div id="help-content" class="tab-content">
+        <h3>Как помочь?</h3>
+        <p>Узнайте, как вы можете помочь приюту.</p>
+        <a href="help.html" class="modal-link">Подробнее</a>
+      </div>
+      <div id="contacts-content" class="tab-content">
+        <h3>Контакты</h3>
+        <p>Наш телефон, электронная почта.</p>
+        <a href="#contacts" class="modal-link">Связаться с нами</a>
+      </div>
+      <div id="aboutus-content" class="tab-content">
+        <a href="aboutus.html" class="modal-link">Узнать больше на отдельной странице</a>
+      </div>
+    </div>
+  </div>
+
+  <script src="priutJava.js"></script>
+</body>
+</html>

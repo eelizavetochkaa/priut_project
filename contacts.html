@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакты</title>
+  <link rel="stylesheet" href="contactsStyle.css">
+</head>
+<body>
+  <header class="header">
+    <div class="header__logo">
+      <img src="images/logo.svg" alt="зоозабота">
+    </div>
+    <nav class="header__nav">
+      <a href="mainpage.html" class="header__link">На главную</a>
+      <a href="animals.html" class="header__link">Наши животные</a>
+      <a href="help.html" class="header__link">Как нам помочь?</a>
+      <a href="#contacts" class="header__link">Контакты</a>
+      <a href="aboutus.html" class="header__link">О нашем приюте</a>
+    </nav>
+    <button class="header__button">Связаться с нами</button>
+  </header>
+
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__title">Наши контакты</h1>
+      <p class="hero__subtitle">
+        Здесь вы можете найти всю необходимую информацию для связи с нами и следить за нашими новостями.
+      </p>
+  </section>
+
+  <section class="contact-info">
+    <h2 class="contact-info__title">Свяжитесь с нами напрямую:</h2>
+    <p class="contact-info__text">Телефон: 253-14-61</p>
+    <p class="contact-info__text">Email: info@priut-teremok.ru</p>
+      <ul class="contact-info__list">
+        <li>253-14-61</li>
+        <li>+7 903 305-14-61</li>
+      </ul>
+
+      <h2 class="contact-info__subtitle">Председатель:</h2>
+      <ul class="contact-info__list">
+        <li>Киселева Мария</li>
+        <li>+7 905 039-46-22</li>
+      </ul>
+
+      <h2 class="contact-info__subtitle">Зам.председателя:</h2>
+      <ul class="contact-info__list">
+        <li>Кренгель Майя</li>
+        <li>+7 966 260-84-25</li>
+      </ul>
+    <div class="contact-info__social">
+      <a href="https://vk.com/your_vk_group" class="contact-info__link" target="_blank">
+        <img src="images/vk.png" alt="ВКонтакте" class="contact-info__icon">
+        Наш ВКонтакте
+      </a>
+      <a href="https://t.me/your_telegram_channel" class="contact-info__link" target="_blank">
+        <img src="images/tg.png" alt="Telegram" class="contact-info__icon">
+        Наш Telegram
+      </a>
+    </div>
+    <p class="contact-info__text">Мы всегда рады ответить на ваши вопросы и предложения!</p>
+  </section>
+
+  <section id="contacts" class="contacts">
+    <h2 class="contacts__title">Связаться с нами</h2>
+    <form class="contacts__form" id="contactForm"> <input type="text" placeholder="Ваше имя" class="contacts__input" id="contactName"> <input type="email" placeholder="Ваш email" class="contacts__input" id="contactEmail"> <textarea placeholder="Ваше сообщение" class="contacts__textarea" id="contactMessage"></textarea> <input type="file" id="contactFile" class="contacts__file-input" accept=".pdf,.doc,.docx,.jpg,.png">
+      <button type="submit" class="contacts__button">Отправить</button>
+    </form>
+  </section>
+
+  <footer class="footer">
+    <p class="footer__copyright">&copy; 2025 Приют "Теремок"</p>
+    <div class="footer__social">
+      <a href="https://vk.com/your_vk_group" class="footer__link" target="_blank">
+        <img src="images/vk.png" alt="ВКонтакте">
+      </a>
+      <a href="https://t.me/your_telegram_channel" class="footer__link" target="_blank">
+        <img src="images/tg.png" alt="Telegram">
+      </a>
+    </div>
+  </footer>
+<script src="priutJava.js"></script>
+</body>
+</html>
