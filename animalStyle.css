@@ -7,25 +7,27 @@ body {
   color: #6d2244;
 }
 
-/* Секция Header */
 .header {
   font-family: cambria;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px;
-  color: #F5F5DC;
   background-color: #B6A28E;
 }
 
 .header__logo img {
   height: 65px; 
+  
+  color: #F5F5DC;
   max-width: 100%;
   height: auto; 
 }
 
 .header__nav {
   display: flex;
+  
+  color: #F5F5DC;
   gap: 28px;
   text-align: center;
 }
